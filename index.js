@@ -20,7 +20,7 @@ button1.addEventListener("click", info);
 const focus = document.querySelector(".focus");
 
 const btnFocus = function btnToFocus(event){
-    console.log(event);
+    console.log(event.target.value);
 }
 
 focus.addEventListener("focus", btnFocus);
@@ -32,7 +32,7 @@ focus.addEventListener("focus", btnFocus);
 const value = document.querySelector(".value");
 
 const btnValue = function btnToValue(event){
-    console.log(event);
+    console.log(event.target.value);
 }
 
 value.addEventListener("input", btnValue);
